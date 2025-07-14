@@ -11,5 +11,7 @@ public class Drink {
         this.calories = calories;
     }
 
+    public String getName() { return name; }
+    public double getPrice() { return price; }
+    public int getCalories() { return calories; }
 }
-
