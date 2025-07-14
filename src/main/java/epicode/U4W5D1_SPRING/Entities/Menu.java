@@ -14,21 +14,25 @@ public class Menu {
     }
 
     public void printMenu() {
-        System.out.println("----- MENU PIZZERIA -----");
+        System.out.println("-----               MENU PIZZERIA               -----");
 
-        System.out.println("PIZZE:");
+        System.out.println("                       PIZZE:");
+        System.out.println("-----------------------------------------------------");
         for (Pizza pizza : pizzas) {
-            System.out.println("- " + pizza.getName() + " | Prezzo: €" + pizza.getPrice() + " | Calorie: " + pizza.getCalories());
+            System.out.println("- " + pizza.getName() + " -  | Prezzo: €" + pizza.getPrice() + " | Calorie: " + pizza.getCalories());
         }
-        System.out.println("AGGIUNTE");
-
+        System.out.println("-----------------------------------------------------");
+        System.out.println("                     AGGIUNTE");
+        System.out.println("-----------------------------------------------------");
         for (Topping topping : toppings) {
-            System.out.println("- " + topping.getName() + "| Prezzo: €" + topping.getPrice() + " | Calorie: " + topping.getCalories());
+            System.out.println("- " + topping.getName() + " -  | Prezzo: €" + topping.getPrice() + " | Calorie: " + topping.getCalories());
         }
-
-        System.out.println("BEVANDE:");
+        System.out.println("-----------------------------------------------------");
+        System.out.println("                     BEVANDE:");
+        System.out.println("-----------------------------------------------------");
         for (Drink drink : drinks) {
-            System.out.println("- " + drink.getName() + " | Prezzo: €" +  drink.getPrice() + " | Calorie: " + drink.getCalories());
+            System.out.println("- " + drink.getName() + " -  | Prezzo: €" +  drink.getPrice() + " | Calorie: " + drink.getCalories());
         }
+        System.out.println("-----------------------------------------------------");
     }
 }
