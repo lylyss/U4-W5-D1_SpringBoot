@@ -97,9 +97,12 @@ public class Config {
     }
     @Bean
     public Menu menu(Pizza margherita, Pizza hawaiianPizza, Pizza capricciosa, Pizza quattroStagioni, Pizza diavola,
+                     Topping prosciutto, Topping salame, Topping peperoni, Topping olive,
+                     Topping carciofi, Topping tonno, Topping cipolla, Topping ananas, Topping funghi,
                      Drink cola, Drink sprite, Drink fanta, Drink acqua, Drink birra, Drink vino) {
         List<Pizza> pizzas = List.of(margherita, hawaiianPizza, capricciosa, quattroStagioni, diavola);
         List<Drink> drinks = List.of(cola, sprite, fanta, acqua, birra, vino);
-        return new Menu(pizzas, drinks);
+        List<Topping> toppings = List.of(prosciutto, salame, peperoni, olive, carciofi, tonno, cipolla, ananas, funghi);
+        return new Menu(pizzas, drinks, toppings);
     }
 }

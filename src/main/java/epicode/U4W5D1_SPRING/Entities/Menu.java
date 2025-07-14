@@ -26,7 +26,6 @@ public class Menu {
             System.out.println("- " + topping.getName() + "| Prezzo: €" + topping.getPrice() + " | Calorie: " + topping.getCalories());
         }
 
-
         System.out.println("BEVANDE:");
         for (Drink drink : drinks) {
             System.out.println("- " + drink.getName() + " | Prezzo: €" +  drink.getPrice() + " | Calorie: " + drink.getCalories());
